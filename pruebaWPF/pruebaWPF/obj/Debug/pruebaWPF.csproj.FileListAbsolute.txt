@@ -1,0 +1,17 @@
+c:\users\alumno\documents\visual studio 2012\Projects\pruebaWPF\pruebaWPF\bin\Debug\pruebaWPF.exe.config
+c:\users\alumno\documents\visual studio 2012\Projects\pruebaWPF\pruebaWPF\bin\Debug\pruebaWPF.exe
+c:\users\alumno\documents\visual studio 2012\Projects\pruebaWPF\pruebaWPF\bin\Debug\pruebaWPF.pdb
+c:\users\alumno\documents\visual studio 2012\Projects\pruebaWPF\pruebaWPF\obj\Debug\pruebaWPF.csprojResolveAssemblyReference.cache
+c:\users\alumno\documents\visual studio 2012\Projects\pruebaWPF\pruebaWPF\obj\Debug\MainWindow.baml
+c:\users\alumno\documents\visual studio 2012\Projects\pruebaWPF\pruebaWPF\obj\Debug\MainWindow.g.cs
+c:\users\alumno\documents\visual studio 2012\Projects\pruebaWPF\pruebaWPF\obj\Debug\App.g.cs
+c:\users\alumno\documents\visual studio 2012\Projects\pruebaWPF\pruebaWPF\obj\Debug\pruebaWPF_MarkupCompile.cache
+c:\users\alumno\documents\visual studio 2012\Projects\pruebaWPF\pruebaWPF\obj\Debug\pruebaWPF.g.resources
+c:\users\alumno\documents\visual studio 2012\Projects\pruebaWPF\pruebaWPF\obj\Debug\pruebaWPF.Properties.Resources.resources
+c:\users\alumno\documents\visual studio 2012\Projects\pruebaWPF\pruebaWPF\obj\Debug\pruebaWPF.csproj.GenerateResource.Cache
+c:\users\alumno\documents\visual studio 2012\Projects\pruebaWPF\pruebaWPF\obj\Debug\pruebaWPF.exe
+c:\users\alumno\documents\visual studio 2012\Projects\pruebaWPF\pruebaWPF\obj\Debug\pruebaWPF.pdb
+c:\users\alumno\documents\visual studio 2012\Projects\pruebaWPF\pruebaWPF\obj\Debug\MaterialDisponible.baml
+c:\users\alumno\documents\visual studio 2012\Projects\pruebaWPF\pruebaWPF\obj\Debug\MaterialDisponible.g.cs
+c:\users\alumno\documents\visual studio 2012\Projects\pruebaWPF\pruebaWPF\obj\Debug\Main.baml
+c:\users\alumno\documents\visual studio 2012\Projects\pruebaWPF\pruebaWPF\obj\Debug\Main.g.cs
