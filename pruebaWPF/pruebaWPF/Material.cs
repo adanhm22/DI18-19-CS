@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace pruebaWPF
 {
-    public class Material : 
+    public class Material 
     {
         private String nombre;
         private float precio;
@@ -25,5 +25,9 @@ namespace pruebaWPF
             this.TipoProducto = tipo;
         }
 
+        public override string ToString()
+        {
+            return Nombre + " " + TipoProducto + " " + Precio;
+        }
     }
 }

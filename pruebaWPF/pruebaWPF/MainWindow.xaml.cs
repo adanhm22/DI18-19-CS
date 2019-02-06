@@ -28,6 +28,7 @@ namespace pruebaWPF
         {
             this.Materiales = new ObservableCollection<Material>();
             InitializeComponent();
+            DataContext = this;
             this.Carreras= carreras;
         }
 

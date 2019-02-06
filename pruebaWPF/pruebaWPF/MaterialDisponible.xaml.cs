@@ -34,6 +34,7 @@ namespace pruebaWPF
         private void botonAgregar_Click(object sender, RoutedEventArgs e)
         {
             this.Materiales.Add(Material);
+            
             this.Close();
         }
 

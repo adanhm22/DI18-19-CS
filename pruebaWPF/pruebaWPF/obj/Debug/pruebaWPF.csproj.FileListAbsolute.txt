@@ -15,3 +15,20 @@ c:\users\alumno\documents\visual studio 2012\Projects\pruebaWPF\pruebaWPF\obj\De
 c:\users\alumno\documents\visual studio 2012\Projects\pruebaWPF\pruebaWPF\obj\Debug\MaterialDisponible.g.cs
 c:\users\alumno\documents\visual studio 2012\Projects\pruebaWPF\pruebaWPF\obj\Debug\Main.baml
 c:\users\alumno\documents\visual studio 2012\Projects\pruebaWPF\pruebaWPF\obj\Debug\Main.g.cs
+C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\bin\Debug\pruebaWPF.exe.config
+C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\pruebaWPF.exe
+C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\pruebaWPF.pdb
+C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\pruebaWPF.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\Main.baml
+C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\MainWindow.baml
+C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\MaterialDisponible.baml
+C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\Main.g.cs
+C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\MainWindow.g.cs
+C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\MaterialDisponible.g.cs
+C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\App.g.cs
+C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\pruebaWPF_MarkupCompile.cache
+C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\pruebaWPF.g.resources
+C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\pruebaWPF.Properties.Resources.resources
+C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\pruebaWPF.csproj.GenerateResource.Cache
+C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\bin\Debug\pruebaWPF.exe
+C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\bin\Debug\pruebaWPF.pdb

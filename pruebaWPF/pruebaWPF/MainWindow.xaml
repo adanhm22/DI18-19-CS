@@ -15,6 +15,6 @@
         <Label x:Name="labelPunto" Content="punto kilometrico" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top"/>
         <Label x:Name="labelMaterial" Content="material disponible" HorizontalAlignment="Left" Margin="19,205,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.132,0.538"/>
         <Button x:Name="botonMaterial" Content="añadir material" HorizontalAlignment="Left" Margin="141,211,0,0" VerticalAlignment="Top" Width="104" Click="botonMaterial_Click"/>
-        <ListBox x:Name="listMaterial" HorizontalAlignment="Left" Height="100" Margin="141,236,0,-17" VerticalAlignment="Top" Width="347"/>
+        <ListBox x:Name="listMaterial" HorizontalAlignment="Left" Height="100" Margin="141,236,0,-17" VerticalAlignment="Top" Width="347" ItemsSource="{Binding Path=Materiales}"/>
     </Grid>
 </Window>
