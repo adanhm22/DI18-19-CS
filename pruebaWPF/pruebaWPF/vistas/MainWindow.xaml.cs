@@ -1,4 +1,5 @@
-﻿using System;
+﻿using pruebaWPF.logica;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -22,20 +23,40 @@ namespace pruebaWPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        public ObservableCollection<Carrera> Carreras{get;set;}
+        public GestionCarreras Gestion { get; set; }
         public ObservableCollection<Material> Materiales { get; set; }
-        public MainWindow(ObservableCollection<Carrera> carreras)
+        public Persona Persona { get; set; }
+        public Carrera Carrera { get; set; }
+        public int Indice { get; set; }
+        public MainWindow(GestionCarreras gestion)
         {
             this.Materiales = new ObservableCollection<Material>();
             InitializeComponent();
+            this.Persona = new pruebaWPF.Persona();
+            this.Carrera = new pruebaWPF.Carrera();
+            this.Carrera.PersonaContacto = this.Persona;
             DataContext = this;
-            this.Carreras= carreras;
+            this.Gestion = gestion;
         }
+
+        public MainWindow(GestionCarreras gestion,Carrera carreraActual, int indice)
+            :this(gestion)
+        {
+            this.Carrera = carreraActual;
+            this.Persona = carreraActual.PersonaContacto;
+            this.Indice = indice;
+        }
+
+
 
         private void botonMaterial_Click(object sender, RoutedEventArgs e)
         {
             MaterialDisponible m = new MaterialDisponible(this.Materiales);
             m.ShowDialog();
         }
+
+
+
+        
     }
 }

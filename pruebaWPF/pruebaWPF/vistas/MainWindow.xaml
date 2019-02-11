@@ -4,14 +4,14 @@
         Title="MainWindow" Height="389" Width="518">
     <Grid>
         <Label x:Name="labelCarrera" Content="carrera" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textCarrera" HorizontalAlignment="Left" Height="23" Margin="139,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="359"/>
-        <TextBox x:Name="textPunto" HorizontalAlignment="Left" Height="23" Margin="139,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="359"/>
+        <TextBox x:Name="textCarrera" HorizontalAlignment="Left" Height="23" Margin="139,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="359" Text="{Binding Path=Carrera.Nombre}"/>
+        <TextBox x:Name="textPunto" HorizontalAlignment="Left" Height="23" Margin="139,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="359" Text="{Binding Path=Carrera.PuntoKilometrico}"/>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="113" Margin="10,73,0,0" Stroke="Black" VerticalAlignment="Top" Width="488"/>
         <Label Content="persona de contacto" HorizontalAlignment="Left" Margin="19,84,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.079,-0.692"/>
         <Label x:Name="labelNombre" Content="Nombre" HorizontalAlignment="Left" Margin="141,109,0,0" VerticalAlignment="Top"/>
         <Label x:Name="labelTelefono" Content="Telefono" HorizontalAlignment="Left" Margin="141,140,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textNombre" HorizontalAlignment="Left" Height="23" Margin="205,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="283"/>
-        <TextBox x:Name="textTelefono" HorizontalAlignment="Left" Height="23" Margin="205,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="283"/>
+        <TextBox x:Name="textNombre" HorizontalAlignment="Left" Height="23" Margin="205,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="283" Text="{Binding Path=Persona.Nombre}"/>
+        <TextBox x:Name="textTelefono" HorizontalAlignment="Left" Height="23" Margin="205,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="283" Text="{Binding Path=Persona.Telefono}"/>
         <Label x:Name="labelPunto" Content="punto kilometrico" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top"/>
         <Label x:Name="labelMaterial" Content="material disponible" HorizontalAlignment="Left" Margin="19,205,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.132,0.538"/>
         <Button x:Name="botonMaterial" Content="añadir material" HorizontalAlignment="Left" Margin="141,211,0,0" VerticalAlignment="Top" Width="104" Click="botonMaterial_Click"/>

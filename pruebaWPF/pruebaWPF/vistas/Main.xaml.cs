@@ -1,4 +1,5 @@
-﻿using System;
+﻿using pruebaWPF.logica;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -21,22 +22,28 @@ namespace pruebaWPF
     /// </summary>
     public partial class Main : Window
     {
-        public ObservableCollection<Carrera> Carreras { get; set; }
+        public GestionCarreras Gestion { get; set; }
         public Main()
         {
-            Carreras = new ObservableCollection<Carrera>();
+            
 
             InitializeComponent();
-            this.DataContext = this;
+            Gestion = new GestionCarreras();
+            this.Gestion.aniadirCarreras();
+            this.DataContext = this.Gestion;
             
-            Carreras.Add(new Carrera("carrera 1", 0));
-            Carreras.Add(new Carrera("carrera 2", 10));
-            Carreras.Add(new Carrera("carrera 3", 20));
+            
         }
 
         private void botonAniadir_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow m = new MainWindow(Carreras);
+            MainWindow m = new MainWindow(Gestion);
+            m.ShowDialog();
+        }
+
+        private void Row_DoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            MainWindow m = new MainWindow(Gestion,(Carrera)this.listaCarreras.SelectedItem,this.listaCarreras.SelectedIndex);
             m.ShowDialog();
         }
     }

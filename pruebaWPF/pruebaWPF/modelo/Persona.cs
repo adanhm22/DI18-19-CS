@@ -15,6 +15,11 @@ namespace pruebaWPF
             Nombre = nombre;
             Telefono = telefono;
         }
+
+        public Persona()
+        {
+            // TODO: Complete member initialization
+        }
         public override string ToString()
         {
             return Nombre + " " + Telefono;
