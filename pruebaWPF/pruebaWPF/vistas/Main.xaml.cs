@@ -29,8 +29,7 @@ namespace pruebaWPF
 
             InitializeComponent();
             Gestion = new GestionCarreras();
-            this.Gestion.aniadirCarreras();
-            this.DataContext = this.Gestion;
+           // this.Gestion.aniadirCarreras();
             
             
         }
@@ -38,12 +37,6 @@ namespace pruebaWPF
         private void botonAniadir_Click(object sender, RoutedEventArgs e)
         {
             MainWindow m = new MainWindow(Gestion);
-            m.ShowDialog();
-        }
-
-        private void Row_DoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            MainWindow m = new MainWindow(Gestion,(Carrera)this.listaCarreras.SelectedItem,this.listaCarreras.SelectedIndex);
             m.ShowDialog();
         }
     }

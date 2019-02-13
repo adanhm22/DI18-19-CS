@@ -10,7 +10,25 @@ namespace pruebaWPF
 {
     public class Carrera : INotifyPropertyChanged
     {
-        public event PropertyChangedEventHandler PropertyChanged;
+       
+        public Carrera()
+        {
+            // TODO: Complete member initialization
+            Materiales = new ObservableCollection<Material>();
+            this.PersonaContacto = new Persona();
+            this.nombre = "";
+            this.puntoKilometrico = 0;
+
+        }
+
+        public Carrera(String nombreCarrera, int puntoKM)
+        {
+            this.nombre = nombreCarrera;
+            this.puntoKilometrico = puntoKM;
+            this.Materiales = new ObservableCollection<Material>();
+            this.PersonaContacto = new Persona();
+        }
+
         private String nombre;
         public String Nombre
         {
@@ -20,7 +38,7 @@ namespace pruebaWPF
             }
             set {
                 this.nombre = value;
-               // this.PropertyChanged(this, new PropertyChangedEventArgs("Nombre"));
+                this.PropertyChanged(this, new PropertyChangedEventArgs("Nombre"));
                 }
         }
         private int puntoKilometrico; 
@@ -34,32 +52,21 @@ namespace pruebaWPF
             {
                 this.puntoKilometrico = value;
                 
-             //   this.PropertyChanged(this, new PropertyChangedEventArgs("PuntoKilometrico"));
+                this.PropertyChanged(this, new PropertyChangedEventArgs("PuntoKilometrico"));
             } 
         }
         public Persona PersonaContacto { get; set; }
-        public ObservableCollection<Material> Materiales { get; set; }
-        public Carrera(String nombreCarrera, int puntoKM)
-        {
-            Nombre = nombreCarrera;
-            PuntoKilometrico = puntoKM;
-            Materiales = new ObservableCollection<Material>();
-            PersonaContacto = new Persona();
-        }
+        public ObservableCollection<Material> Materiales{ get; set; }
+      
 
-        public Carrera()
-        {
-            // TODO: Complete member initialization
-            Materiales = new ObservableCollection<Material>();
-            PersonaContacto=new Persona();
-        }
+        
 
         public override string ToString()
         {
             return Nombre;
         }
 
-
+        public event PropertyChangedEventHandler PropertyChanged;
         
     }
 }

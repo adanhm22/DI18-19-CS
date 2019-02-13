@@ -31,3 +31,4 @@ C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\vistas
 C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\vistas\Main.g.cs
 C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\vistas\MainWindow.g.cs
 C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\vistas\MaterialDisponible.g.cs
+C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\pruebaWPF.csprojResolveAssemblyReference.cache

@@ -30,13 +30,17 @@ namespace pruebaWPF
         public int Indice { get; set; }
         public MainWindow(GestionCarreras gestion)
         {
-            this.Materiales = new ObservableCollection<Material>();
             InitializeComponent();
-            this.Persona = new pruebaWPF.Persona();
-            this.Carrera = new pruebaWPF.Carrera();
+            this.Materiales = new ObservableCollection<Material>();
+            this.Carrera = new Carrera();
+            this.Persona = new Persona();
+
             this.Carrera.PersonaContacto = this.Persona;
-            DataContext = this;
             this.Gestion = gestion;
+            this.DataContext = this;
+            
+           
+            
         }
 
         public MainWindow(GestionCarreras gestion,Carrera carreraActual, int indice)

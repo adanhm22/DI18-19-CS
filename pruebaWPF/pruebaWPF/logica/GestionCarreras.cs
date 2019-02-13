@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace pruebaWPF.logica
 {
-     
 
-    public class GestionCarreras
+    public class GestionCarreras:INotifyPropertyChanged
     {
         public ObservableCollection<Carrera> Carreras { get; set; }
 
@@ -25,6 +25,7 @@ namespace pruebaWPF.logica
                 this.Carreras.Add(new Carrera("carrera" + i, i));
             }
         }
+        public event PropertyChangedEventHandler PropertyChanged;
 
 
     }
