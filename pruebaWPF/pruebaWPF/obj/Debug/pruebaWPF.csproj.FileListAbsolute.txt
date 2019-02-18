@@ -32,3 +32,7 @@ C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\vistas
 C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\vistas\MainWindow.g.cs
 C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\vistas\MaterialDisponible.g.cs
 C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\pruebaWPF.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\vistas\VistaCarreras.baml
+C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\vistas\VistaCarreras.g.cs
+C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\vistas\aniadirMaterial.baml
+C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\vistas\aniadirMaterial.g.cs

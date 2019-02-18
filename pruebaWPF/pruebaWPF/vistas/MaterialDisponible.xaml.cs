@@ -1,4 +1,5 @@
-﻿using System;
+﻿using pruebaWPF.logica;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -20,27 +21,13 @@ namespace pruebaWPF
     /// </summary>
     public partial class MaterialDisponible : Window
     {
-        public ObservableCollection<Material> Materiales { get; set; }
-        public Material Material { get; set; }
-        public MaterialDisponible(ObservableCollection<Material> Materiales)
+        public GestionCarreras Gestion { get; set; }
+
+        public MaterialDisponible(GestionCarreras gestion)
         {
-            Material = new Material("", 0f, "comida");
-            this.Materiales = Materiales;
+            this.Gestion = gestion;
             InitializeComponent();
-            this.DataContext = this;
-            
-        }
-
-        private void botonAgregar_Click(object sender, RoutedEventArgs e)
-        {
-            this.Materiales.Add(Material);
-            
-            this.Close();
-        }
-
-        private void combo_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
-        {
-            this.Material.TipoProducto=(String) this.combo.SelectedItem;
+            DataContext = Gestion;
         }
     }
 }

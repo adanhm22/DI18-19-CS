@@ -55,6 +55,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="vistas\AniadirMaterial.xaml.cs">
+      <DependentUpon>AniadirMaterial.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\VistaCarreras.xaml.cs">
+      <DependentUpon>VistaCarreras.xaml</DependentUpon>
+    </Compile>
+    <Page Include="vistas\AniadirMaterial.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="vistas\Main.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -79,6 +89,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="vistas\MaterialDisponible.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistas\VistaCarreras.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

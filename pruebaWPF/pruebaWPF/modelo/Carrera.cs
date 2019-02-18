@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace pruebaWPF
 {
-    public class Carrera : INotifyPropertyChanged
+    public class Carrera : INotifyPropertyChanged,ICloneable
     {
        
         public Carrera()
@@ -66,7 +66,14 @@ namespace pruebaWPF
             return Nombre;
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
         
+        
+        public event PropertyChangedEventHandler PropertyChanged;
+
+
+        public object Clone()
+        {
+            return this.MemberwiseClone();
+        }
     }
 }

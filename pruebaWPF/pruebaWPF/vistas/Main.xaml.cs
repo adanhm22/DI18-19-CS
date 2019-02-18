@@ -1,4 +1,5 @@
 ﻿using pruebaWPF.logica;
+using pruebaWPF.vistas;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -25,11 +26,11 @@ namespace pruebaWPF
         public GestionCarreras Gestion { get; set; }
         public Main()
         {
-            
+            Gestion = new GestionCarreras();
 
             InitializeComponent();
-            Gestion = new GestionCarreras();
-           // this.Gestion.aniadirCarreras();
+            this.Gestion.aniadirCarreras();
+            this.DataContext = this.Gestion;
             
             
         }
@@ -38,6 +39,18 @@ namespace pruebaWPF
         {
             MainWindow m = new MainWindow(Gestion);
             m.ShowDialog();
+        }
+
+        private void Row_DoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            MainWindow m = new MainWindow(Gestion);
+            m.ShowDialog();
+        }
+
+        private void botonAniadirMateriales_Click(object sender, RoutedEventArgs e) 
+        {
+            AniadirMaterial am = new AniadirMaterial(this.Gestion);
+            am.ShowDialog();
         }
     }
 }

@@ -13,12 +13,18 @@ namespace pruebaWPF
         private String nombre;
         private float precio;
         private String tipoProducto;
+        public event PropertyChangedEventHandler PropertyChanged;
 
         public Material(String nombre, float precio, String tipo)
         {
             this.nombre = nombre;
             this.precio = precio;
             this.tipoProducto = tipo;
+        }
+
+        public Material()
+        {
+            // TODO: Complete member initialization
         }
 
         public String Nombre
@@ -66,6 +72,6 @@ namespace pruebaWPF
         {
             return Nombre + " " + TipoProducto + " " + Precio;
         }
-        public event PropertyChangedEventHandler PropertyChanged;
+        
     }
 }

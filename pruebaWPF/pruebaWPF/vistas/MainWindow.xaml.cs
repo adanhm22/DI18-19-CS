@@ -30,36 +30,54 @@ namespace pruebaWPF
         public int Indice { get; set; }
         public MainWindow(GestionCarreras gestion)
         {
-            InitializeComponent();
+            
             this.Materiales = new ObservableCollection<Material>();
             this.Carrera = new Carrera();
             this.Persona = new Persona();
-
+            this.Carrera.Materiales = this.Materiales;
             this.Carrera.PersonaContacto = this.Persona;
             this.Gestion = gestion;
-            this.DataContext = this;
             
-           
+            InitializeComponent();
+            this.DataContext = this;
             
         }
 
         public MainWindow(GestionCarreras gestion,Carrera carreraActual, int indice)
-            :this(gestion)
         {
+            this.Gestion = gestion;
             this.Carrera = carreraActual;
-            this.Persona = carreraActual.PersonaContacto;
+            this.Materiales = this.Carrera.Materiales;
+            this.Persona = this.Carrera.PersonaContacto;
             this.Indice = indice;
+            
+            InitializeComponent();
+            this.botonAniadir.Content = "Modificar";
+            this.DataContext = this;
         }
 
 
 
         private void botonMaterial_Click(object sender, RoutedEventArgs e)
         {
-            MaterialDisponible m = new MaterialDisponible(this.Materiales);
+
+            MaterialDisponible m = new MaterialDisponible(this.Gestion);
             m.ShowDialog();
         }
 
-
+        private void aniadirModificar(object sender, RoutedEventArgs e)
+        {
+            if (this.Indice != -1)
+            {
+                this.Gestion.Carreras.RemoveAt(Indice);
+                this.Gestion.Carreras.Insert(Indice, this.Carrera);
+            }
+            else
+            {
+                this.Gestion.Carreras.Add(this.Carrera);
+            }
+            this.Close();
+        }
 
         
     }

@@ -9,13 +9,15 @@ using System.Threading.Tasks;
 namespace pruebaWPF.logica
 {
 
-    public class GestionCarreras:INotifyPropertyChanged
+    public class GestionCarreras
     {
         public ObservableCollection<Carrera> Carreras { get; set; }
+        public ObservableCollection<Material> Materiales { get; set; }
 
         public GestionCarreras()
         {
             this.Carreras = new ObservableCollection<Carrera>();
+            this.Materiales = new ObservableCollection<Material>();
         }
 
         public void aniadirCarreras()
@@ -25,7 +27,6 @@ namespace pruebaWPF.logica
                 this.Carreras.Add(new Carrera("carrera" + i, i));
             }
         }
-        public event PropertyChangedEventHandler PropertyChanged;
 
 
     }
