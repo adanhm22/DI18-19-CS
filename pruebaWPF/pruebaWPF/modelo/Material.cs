@@ -7,14 +7,8 @@ using System.Threading.Tasks;
 
 namespace pruebaWPF
 {
-    public class Material : INotifyPropertyChanged
+    public class Material : INotifyPropertyChanged, ICloneable
     {
-       
-        private String nombre;
-        private float precio;
-        private String tipoProducto;
-        public event PropertyChangedEventHandler PropertyChanged;
-
         public Material(String nombre, float precio, String tipo)
         {
             this.nombre = nombre;
@@ -27,6 +21,10 @@ namespace pruebaWPF
             // TODO: Complete member initialization
         }
 
+        private String nombre;
+        private float precio;
+        private String tipoProducto;
+        public event PropertyChangedEventHandler PropertyChanged;
         public String Nombre
         {
             get
@@ -72,6 +70,10 @@ namespace pruebaWPF
         {
             return Nombre + " " + TipoProducto + " " + Precio;
         }
-        
+
+        public object Clone()
+        {
+            return this.MemberwiseClone();
+        }
     }
 }

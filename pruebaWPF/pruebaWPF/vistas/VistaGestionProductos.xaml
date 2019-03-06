@@ -1,0 +1,17 @@
+﻿<Window x:Class="pruebaWPF.vistas.VistaGestionProductos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pruebaWPF.vistas"
+        mc:Ignorable="d"
+        Title="VistaGestionProductos" Height="298.686" Width="317.376">
+    <Grid Margin="0,0,2,3">
+        <Label Content="Nuevo producto" HorizontalAlignment="Left" Margin="10,13,0,0" VerticalAlignment="Top" Width="108"/>
+        <Button Content="agregar" HorizontalAlignment="Left" Margin="203,10,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" />
+        <Label Content="Productos" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.328,0.49"/>
+        <DataGrid x:Name="GridProductos" HorizontalAlignment="Left" Height="170" Margin="20,84,0,0" VerticalAlignment="Top" Width="268" ItemsSource="{Binding Path=Materiales}" AutoGenerateColumns="True" MouseDoubleClick="GridProductos_MouseDoubleClick" GotMouseCapture="GridProductos_GotMouseCapture" IsReadOnly="True"/>
+        <Button x:Name="botonEliminar" Content="eliminar" HorizontalAlignment="Left" Margin="203,44,0,0" VerticalAlignment="Top" Width="75" Click="BotonEliminar_Click" IsEnabled="False"/>
+
+    </Grid>
+</Window>

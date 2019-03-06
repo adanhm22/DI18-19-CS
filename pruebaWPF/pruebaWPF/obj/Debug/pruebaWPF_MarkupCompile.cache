@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\
+C:\Users\adan\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\obj\Debug\
 pruebaWPF
 none
 false
 DEBUG;TRACE
-C:\Users\alumno\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\App.xaml
-5-41665874
+C:\Users\adan\Documents\GitHub\DI18-19-CS\pruebaWPF\pruebaWPF\App.xaml
+11-1991334757
 
-131579873043
+23-789250175
 141012385901
-vistas\AniadirMaterial.xaml;vistas\Main.xaml;vistas\MainWindow.xaml;vistas\MaterialDisponible.xaml;vistas\VistaCarreras.xaml;
+vistas\AgregarModificarAvituallamiento.xaml;vistas\AgregarModificarCarrera.xaml;vistas\AgregarModificarPersona.xaml;vistas\AgregarModificarProducto.xaml;vistas\Main.xaml;vistas\VerAvituallamientos.xaml;vistas\VerMateriales.xaml;vistas\VistaGestionAvituallamiento.xaml;vistas\VistaGestionCarreras.xaml;vistas\VistaGestionPersonas.xaml;vistas\VistaGestionProductos.xaml;
 
 False
 

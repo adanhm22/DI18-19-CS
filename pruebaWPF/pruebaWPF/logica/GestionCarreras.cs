@@ -11,20 +11,28 @@ namespace pruebaWPF.logica
 
     public class GestionCarreras
     {
-        public ObservableCollection<Carrera> Carreras { get; set; }
-        public ObservableCollection<Material> Materiales { get; set; }
 
-        public GestionCarreras()
+
+        public ObservableCollection<Carrera> Carreras { get; set; }
+        private static GestionCarreras SINGELTON { get; set; }
+
+        public static GestionCarreras getSingelton()
+        {
+            if (SINGELTON==null)
+                SINGELTON=new GestionCarreras();
+            return SINGELTON;
+        }
+
+        private GestionCarreras()
         {
             this.Carreras = new ObservableCollection<Carrera>();
-            this.Materiales = new ObservableCollection<Material>();
         }
 
         public void aniadirCarreras()
         {
             for (int i = 0; i < 4; i++)
             {
-                this.Carreras.Add(new Carrera("carrera" + i, i));
+                this.Carreras.Add(new Carrera("carrera" + i));
             }
         }
 

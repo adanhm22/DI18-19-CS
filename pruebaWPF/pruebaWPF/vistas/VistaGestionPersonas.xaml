@@ -1,0 +1,17 @@
+﻿<Window x:Class="pruebaWPF.vistas.VistaGestionPersonas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pruebaWPF.vistas"
+        mc:Ignorable="d"
+        Title="VistaGestionPersonas" Height="311" Width="398">
+    <Grid>
+        <Button Content="Nueva" HorizontalAlignment="Left" Margin="294,13,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <DataGrid x:Name="gridPersonas" HorizontalAlignment="Left" Height="179" Margin="10,87,0,0" VerticalAlignment="Top" Width="362" IsReadOnly="True" GotMouseCapture="DataGrid_GotMouseCapture" ItemsSource="{Binding Path=Personas}" AutoGenerateColumns="True" MouseDoubleClick="GridPersonas_MouseDoubleClick"/>
+        <Label Content="Nueva Persona" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="116"/>
+        <Label Content="Personas" HorizontalAlignment="Left" Margin="10,56,0,0" VerticalAlignment="Top" Width="116"/>
+        <Button x:Name="botonEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="294,59,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="BotonEliminar_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,25 @@
+﻿<Window x:Class="pruebaWPF.vistas.AgregarModificarAvituallamiento"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pruebaWPF.vistas"
+        mc:Ignorable="d"
+        Title="AgregarModificarAvituallamiento" Height="440.497" Width="416.568">
+    <Grid>
+        <Label Content="Carrera" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="125"/>
+        <Label Content="Punto kilometrico" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="125"/>
+        <Label Content="Persona de contacto" HorizontalAlignment="Left" Margin="10,109,0,0" VerticalAlignment="Top" Width="125"/>
+        <Label Content="Materiales" HorizontalAlignment="Left" Margin="10,166,0,0" VerticalAlignment="Top" Width="125"/>
+        <Button x:Name="botonAgregarModificar" Content="Agregar" HorizontalAlignment="Left" Margin="162,378,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.627,0.373" Click="BotonAgregarModificar_Click"/>
+        <ComboBox x:Name="comboCarreras" HorizontalAlignment="Left" Margin="150,14,0,0" VerticalAlignment="Top" Width="120" ItemsSource="{Binding Path=Carreras}"/>
+        <Button x:Name="botonNuevaCarrera" Content="nueva" HorizontalAlignment="Left" Margin="308,13,0,0" VerticalAlignment="Top" Width="75" Click="BotonNuevaCarrera_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="150,60,0,0" TextWrapping="Wrap" Text="{Binding Path=Avituallamiento.PuntoKilometrico}" VerticalAlignment="Top" Width="159"/>
+        <ComboBox x:Name="comboPersonas" HorizontalAlignment="Left" Margin="150,109,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.003,0.657" ItemsSource="{Binding Path=Personas}"/>
+        <Button x:Name="botonNuevaPersona" Content="Nueva" HorizontalAlignment="Left" Margin="308,109,0,0" VerticalAlignment="Top" Width="75" Click="BotonNuevaPersona_Click"/>
+        <DataGrid x:Name="gridMateriales" HorizontalAlignment="Left" Height="137" Margin="37,213,0,0" VerticalAlignment="Top" Width="334" GotMouseCapture="DataGrid_GotMouseCapture" IsReadOnly="True" ItemsSource="{Binding Path=Avituallamiento.MaterialDisponible}"/>
+        <Button x:Name="botonAgregarMaterial" Content="Agregar" HorizontalAlignment="Left" Margin="308,172,0,0" VerticalAlignment="Top" Width="75" Click="BotonAgregarMaterial_Click"/>
+        <Button x:Name="botonEliminarMaterial" Content="Eliminar" HorizontalAlignment="Left" Margin="195,172,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="Button_Click"/>
+
+    </Grid>
+</Window>

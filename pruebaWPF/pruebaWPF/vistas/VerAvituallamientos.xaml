@@ -1,0 +1,14 @@
+﻿<Window x:Class="pruebaWPF.vistas.VerAvituallamientos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pruebaWPF.vistas"
+        mc:Ignorable="d"
+        Title="VerAvituallamientos" Height="359.467" Width="425.888">
+    <Grid>
+        <DataGrid x:Name="gridAvituallamiento" HorizontalAlignment="Left" Height="237" Margin="10,10,0,0" VerticalAlignment="Top" Width="390" GotMouseCapture="DataGrid_GotMouseCapture" ItemsSource="{Binding Path=Avituallamientos}" IsReadOnly="True"/>
+        <Button x:Name="botonAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="165,268,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="BotonAgregar_Click" RenderTransformOrigin="0.929,0.693"/>
+
+    </Grid>
+</Window>

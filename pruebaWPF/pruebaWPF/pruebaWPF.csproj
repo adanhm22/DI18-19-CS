@@ -55,23 +55,59 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="vistas\AniadirMaterial.xaml.cs">
-      <DependentUpon>AniadirMaterial.xaml</DependentUpon>
+    <Compile Include="logica\GestionAvituallamiento.cs" />
+    <Compile Include="logica\GestionPersonas.cs" />
+    <Compile Include="logica\GestionProductos.cs" />
+    <Compile Include="modelo\Avituallamiento.cs" />
+    <Compile Include="vistas\AgregarModificarAvituallamiento.xaml.cs">
+      <DependentUpon>AgregarModificarAvituallamiento.xaml</DependentUpon>
     </Compile>
-    <Compile Include="vistas\VistaCarreras.xaml.cs">
-      <DependentUpon>VistaCarreras.xaml</DependentUpon>
+    <Compile Include="vistas\AgregarModificarCarrera.xaml.cs">
+      <DependentUpon>AgregarModificarCarrera.xaml</DependentUpon>
     </Compile>
-    <Page Include="vistas\AniadirMaterial.xaml">
+    <Compile Include="vistas\AgregarModificarPersona.xaml.cs">
+      <DependentUpon>AgregarModificarPersona.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\AgregarModificarProducto.xaml.cs">
+      <DependentUpon>AgregarModificarProducto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\VerAvituallamientos.xaml.cs">
+      <DependentUpon>VerAvituallamientos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\VerMateriales.xaml.cs">
+      <DependentUpon>VerMateriales.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\VistaGestionAvituallamiento.xaml.cs">
+      <DependentUpon>VistaGestionAvituallamiento.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\VistaGestionCarreras.xaml.cs">
+      <DependentUpon>VistaGestionCarreras.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\VistaGestionPersonas.xaml.cs">
+      <DependentUpon>VistaGestionPersonas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\VistaGestionProductos.xaml.cs">
+      <DependentUpon>VistaGestionProductos.xaml</DependentUpon>
+    </Compile>
+    <Page Include="vistas\AgregarModificarAvituallamiento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistas\AgregarModificarCarrera.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistas\AgregarModificarPersona.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistas\AgregarModificarProducto.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="vistas\Main.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="vistas\MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -84,23 +120,32 @@
     </Compile>
     <Compile Include="modelo\Material.cs" />
     <Compile Include="modelo\Persona.cs" />
-    <Compile Include="vistas\MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Page Include="vistas\MaterialDisponible.xaml">
+    <Page Include="vistas\VerAvituallamientos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="vistas\VistaCarreras.xaml">
+    <Page Include="vistas\VerMateriales.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistas\VistaGestionAvituallamiento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistas\VistaGestionCarreras.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistas\VistaGestionPersonas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistas\VistaGestionProductos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="vistas\MaterialDisponible.xaml.cs">
-      <DependentUpon>MaterialDisponible.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace pruebaWPF
 {
-    public class Persona : INotifyPropertyChanged
+    public class Persona : INotifyPropertyChanged,ICloneable
     {
         public Persona()
         {
@@ -18,7 +18,7 @@ namespace pruebaWPF
             this.nombre = nombre;
             this.telefono = telefono;
         }
-
+        public event PropertyChangedEventHandler PropertyChanged;
         private string nombre;
         public String Nombre 
         {
@@ -51,6 +51,10 @@ namespace pruebaWPF
         {
             return Nombre + " " + Telefono;
         }
-        public event PropertyChangedEventHandler PropertyChanged;
+
+        public object Clone()
+        {
+            return this.MemberwiseClone();
+        }
     }
 }

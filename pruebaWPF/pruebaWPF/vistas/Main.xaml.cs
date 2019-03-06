@@ -26,31 +26,28 @@ namespace pruebaWPF
         public GestionCarreras Gestion { get; set; }
         public Main()
         {
-            Gestion = new GestionCarreras();
-
             InitializeComponent();
-            this.Gestion.aniadirCarreras();
-            this.DataContext = this.Gestion;
-            
-            
         }
 
-        private void botonAniadir_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow m = new MainWindow(Gestion);
-            m.ShowDialog();
+            VistaGestionProductos productos =  new VistaGestionProductos();
+            productos.ShowDialog();
         }
 
-        private void Row_DoubleClick(object sender, MouseButtonEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            MainWindow m = new MainWindow(Gestion);
-            m.ShowDialog();
+            new VistaGestionAvituallamiento().ShowDialog();
         }
 
-        private void botonAniadirMateriales_Click(object sender, RoutedEventArgs e) 
+        private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            AniadirMaterial am = new AniadirMaterial(this.Gestion);
-            am.ShowDialog();
+            new VistaGestionPersonas().ShowDialog();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            new VistaGestionCarreras().ShowDialog();
         }
     }
 }

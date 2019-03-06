@@ -1,0 +1,17 @@
+﻿<Window x:Class="pruebaWPF.vistas.AgregarModificarPersona"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pruebaWPF.vistas"
+        mc:Ignorable="d"
+        Title="AgregarModificarPersona" Height="201.036" Width="330.03">
+    <Grid>
+        <Button x:Name="botonAgregarModificar" Content="Agregar" HorizontalAlignment="Left" Margin="112,127,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.677,-2.583" Click="BotonAgregarModificar_Click"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Telefono" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="180,10,0,0" TextWrapping="Wrap" Text="{Binding Path=Persona.Nombre}" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="180,63,0,0" TextWrapping="Wrap" Text="{Binding Path=Persona.Telefono}" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

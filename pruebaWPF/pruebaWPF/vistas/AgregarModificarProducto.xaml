@@ -1,0 +1,19 @@
+﻿<Window x:Class="pruebaWPF.vistas.AgregarModificarProducto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pruebaWPF.vistas"
+        mc:Ignorable="d"
+        Title="AgregarModificarProducto" Height="328" Width="372.633">
+    <Grid>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="10,26,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label Content="Precio" HorizontalAlignment="Left" Margin="10,92,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.026,-0.115" Width="105"/>
+        <Label Content="Tipo" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top" Width="105"/>
+        <ComboBox x:Name="ComboTipos" HorizontalAlignment="Left" Margin="218,169,0,0" VerticalAlignment="Top" Width="120" ItemsSource="{Binding Path=TiposMaterial}"/>
+        <Button x:Name="botonAgregarModificar" Content="Agregar" HorizontalAlignment="Left" Margin="140,246,0,0" VerticalAlignment="Top" Width="75" IsCancel="True" Click="Button_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="218,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding Path=Material.Nombre}"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="218,96,0,0" TextWrapping="Wrap" Text="{Binding Path=Material.Precio}" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

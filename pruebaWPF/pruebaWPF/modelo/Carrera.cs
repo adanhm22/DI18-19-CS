@@ -1,4 +1,5 @@
-﻿using System;
+﻿using pruebaWPF.modelo;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -10,25 +11,20 @@ namespace pruebaWPF
 {
     public class Carrera : INotifyPropertyChanged,ICloneable
     {
-       
+
         public Carrera()
         {
             // TODO: Complete member initialization
-            Materiales = new ObservableCollection<Material>();
-            this.PersonaContacto = new Persona();
             this.nombre = "";
-            this.puntoKilometrico = 0;
-
+            this.Avituallamientos = new ObservableCollection<Avituallamiento>();
         }
-
-        public Carrera(String nombreCarrera, int puntoKM)
+        public Carrera(string nombre)
         {
-            this.nombre = nombreCarrera;
-            this.puntoKilometrico = puntoKM;
-            this.Materiales = new ObservableCollection<Material>();
-            this.PersonaContacto = new Persona();
+            Nombre = nombre;
+            this.Avituallamientos = new ObservableCollection<Avituallamiento>();
         }
 
+        public ObservableCollection<Avituallamiento> Avituallamientos { get; set; }
         private String nombre;
         public String Nombre
         {
@@ -41,22 +37,6 @@ namespace pruebaWPF
                 this.PropertyChanged(this, new PropertyChangedEventArgs("Nombre"));
                 }
         }
-        private int puntoKilometrico; 
-        public int PuntoKilometrico 
-        {
-            get
-            {
-                return this.puntoKilometrico;
-            }
-            set 
-            {
-                this.puntoKilometrico = value;
-                
-                this.PropertyChanged(this, new PropertyChangedEventArgs("PuntoKilometrico"));
-            } 
-        }
-        public Persona PersonaContacto { get; set; }
-        public ObservableCollection<Material> Materiales{ get; set; }
       
 
         
